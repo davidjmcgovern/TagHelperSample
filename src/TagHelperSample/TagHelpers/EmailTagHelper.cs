@@ -11,7 +11,7 @@ namespace TagHelperSample.TagHelpers
     [TargetElement("email")]
     public class EmailTagHelper : TagHelper
     {
-        string emailDomain = "mycompany.com";
+        public static string emailDomain = "mycompany.com";
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             var sb = new StringBuilder();
